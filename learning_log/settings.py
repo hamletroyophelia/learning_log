@@ -78,8 +78,11 @@ WSGI_APPLICATION = "learning_log.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        #render数据库配置
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'll_env_db',
+        'USER': 'admin',
+        'PASSWORD': 'ly112358',
     }
 }
 
@@ -112,10 +115,11 @@ USE_I18N = True
 
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images)
+# Static files (CSS, JavaScript, Images),静态文件设置
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = 'learning_logs/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
