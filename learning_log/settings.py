@@ -83,6 +83,8 @@ DATABASES = {
         'NAME': 'll_env_db',
         'USER': 'admin',
         'PASSWORD': 'sIi5oxgu7hCMs8ozNdLp1xDpPzkLFfW1',
+        'HOST': 'dpg-cisjaetgkuvgs6psk06g-a',
+        'PORT': '5432',
     }
 }
 
